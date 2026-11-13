@@ -1,0 +1,10 @@
+{
+  "chat.promptFiles": true,
+  "chat.useAgentsMdFile": true,
+  "files.exclude": {
+    "**/.gitkeep": true
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  }
+}

@@ -1,0 +1,1 @@
+Read and follow [AGENTS.md](../AGENTS.md) at the workspace root. It is the single source of truth for this vault: French output, read-only Microsoft 365 access through Work IQ, no invented facts, and the file conventions.

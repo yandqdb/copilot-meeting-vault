@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "workiq": {
+      "type": "http",
+      "url": "https://workiq.svc.cloud.microsoft/mcp",
+      "tools": [
+        "fetch",
+        "fetch_blob",
+        "call_function",
+        "retrieve",
+        "ask",
+        "list_agents",
+        "search_paths",
+        "get_schema"
+      ]
+    }
+  }
+}

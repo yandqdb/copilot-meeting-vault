@@ -1,0 +1,22 @@
+name: garde-confidentialite
+
+# Fails the build if anything other than the kit ends up in the repo.
+on:
+  push:
+  pull_request:
+
+jobs:
+  no-vault-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vault folders must be empty
+        run: |
+          leaks=$(git ls-files reunions personnes projets bilans boite-de-reception state config \
+            | grep -vE '(^|/)\.gitkeep$|^state/README\.md$|^config/vault\.example\.yaml$' || true)
+          if [ -n "$leaks" ]; then
+            echo "::error::Vault content is committed. Remove it from git history:"
+            echo "$leaks"
+            exit 1
+          fi
+          echo "OK: no vault content tracked."

@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "workiq": {
+      "type": "http",
+      "url": "https://workiq.svc.cloud.microsoft/mcp"
+    }
+  }
+}

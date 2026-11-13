@@ -1,0 +1,23 @@
+# Copiez ce fichier vers config/vault.yaml et remplissez-le.
+# config/vault.yaml est ignoré par git : il ne quitte jamais votre poste.
+
+moi:
+  nom: ""                 # Prénom Nom, tel qu'il apparaît dans Teams
+  courriel: ""            # adresse de connexion Microsoft 365
+
+organisation: ""          # nom de l'organisation cliente
+fuseau_horaire: America/Toronto
+langue: fr-CA
+
+reunions:
+  # Ne traiter que les réunions Teams en ligne.
+  en_ligne_seulement: true
+  # Ignorer les réunions dont le titre contient un de ces mots (insensible à la casse).
+  ignorer_titres: ["lunch", "dîner", "bloc", "focus", "personnel"]
+  # Fenêtre maximale quand aucun filigrane n'existe encore.
+  jours_par_defaut: 7
+
+projets:
+  # Mots-clés pour rattacher une réunion à un projet. Le nom doit correspondre au fichier projets/<nom>.md
+  # - nom: migration-entrepot
+  #   mots_cles: ["migration", "entrepôt", "lakehouse"]

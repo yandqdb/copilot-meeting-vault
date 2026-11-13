@@ -1,0 +1,27 @@
+# ------------------------------------------------------------------
+# Vault content is private client data. It must NEVER be committed.
+# Only the kit (instructions, prompts, templates, config example) is tracked.
+# ------------------------------------------------------------------
+reunions/**
+personnes/**
+projets/**
+bilans/**
+boite-de-reception/**
+!reunions/.gitkeep
+!personnes/.gitkeep
+!projets/.gitkeep
+!bilans/.gitkeep
+!boite-de-reception/.gitkeep
+
+state/*
+!state/README.md
+
+config/vault.yaml
+
+# Editors and note apps
+.obsidian/
+.foam/
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
